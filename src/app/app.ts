@@ -1,12 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { EpiList } from './epi-list/epi-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, EpiList],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('seguranca-frontend');
+  titulo = "Sistema de Controle de EPI";
+  subtitulo = "Gestão de Segurança do Trabalho";
+  descricao = "Aplicação de controle de EPI é uma ferramenta essencial para garantir a segurança e o bem-estar dos trabalhadores em ambientes de risco. Com ela, é possível monitorar o uso adequado dos Equipamentos de Proteção Individual, registrar inspeções e manutenções, além de fornecer relatórios detalhados sobre a conformidade com as normas de segurança.";
 }
