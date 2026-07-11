@@ -1,3 +1,13 @@
+<nav class="container mt-3">
+  <a routerLink="/epi" class="btn btn-outline-primary me-2">
+    Lista de EPIs
+  </a>
+  <a routerLink="/epi/detalhe" class="btn btn-outline-secondary">
+    Detalhes do EPI
+  </a>
+</nav>
+<hr>
+<router-outlet></router-outlet>
 <section class="container">
   <article class="mb-4">
     <h1>{{titulo}}</h1>
@@ -7,11 +17,10 @@
   <h3>Bem-vindo!</h3>
   <p class="lead">{{descricao}}</p>
   <div class="card p-2 mb-2 shadow-sm">
-  <ul class="mb-0">
-    <li>Gestão de Equipamentos de Proteção Individual (EPIs)</li>
-    <li>Controle de Validade e Status dos Equipamentos</li>
-    <li>Acompanhamento de conformidade com normas e segurança</li>
-  </ul>
+    <ul class="mb-0">
+      <li>Gestão de Equipamentos de Proteção Individual (EPIs)</li>
+      <li>Controle de Validade e Status dos Equipamentos</li>
+      <li>Acompanhamento de conformidade com normas e segurança</li>
+    </ul>
   </div>
 </section>
-<app-epi-list></app-epi-list>

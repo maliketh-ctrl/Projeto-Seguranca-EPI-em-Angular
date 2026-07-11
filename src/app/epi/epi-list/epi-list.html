@@ -11,6 +11,11 @@
         Tipo: Proteção de Pés <br>
         Validade 18 meses </li>
     <button class="btn btn-primary">Comprar</button>
- 
+     <a routerLink="/epi/detalhe" class="btn btn-primary ms-2">
+    Ver detalhes
+  </a>
+  <a [routerLink]="['/epi/detalhe']" [queryParams]="{ id: 1 }" class="btn  btn-primary ms-2">
+  Enviar ID
+ </a>
 </ul>
 </section>
